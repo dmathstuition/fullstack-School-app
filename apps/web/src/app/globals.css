@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply min-h-screen text-slate-100;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.35), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(168, 85, 247, 0.30), transparent 30%),
+    radial-gradient(circle at 40% 90%, rgba(34, 197, 94, 0.22), transparent 34%),
+    linear-gradient(135deg, #0b1220 0%, #121a31 42%, #1b2550 100%);
+}
+
+.glass {
+  @apply border border-white/15 bg-white/10 backdrop-blur-xl shadow-2xl shadow-slate-950/30;
+}
+
+.glass-soft {
+  @apply border border-white/10 bg-white/5 backdrop-blur-lg;
+}

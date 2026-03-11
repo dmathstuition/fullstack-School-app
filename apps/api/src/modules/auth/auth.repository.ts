@@ -59,6 +59,11 @@ export const authRepository = {
     return users.get(userId) ?? null;
   },
 
+
+  async listUsers(): Promise<AuthUserRecord[]> {
+    return Array.from(users.values());
+  },
+
   async updateUser(user: AuthUserRecord): Promise<void> {
     users.set(user.id, user);
     usersByEmail.set(user.email.toLowerCase(), user.id);

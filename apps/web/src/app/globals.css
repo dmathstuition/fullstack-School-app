@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply min-h-screen text-slate-100;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.35), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(168, 85, 247, 0.30), transparent 30%),
+    radial-gradient(circle at 40% 90%, rgba(34, 197, 94, 0.22), transparent 34%),
+    linear-gradient(135deg, #0b1220 0%, #121a31 42%, #1b2550 100%);
+}
+
+.glass {
+  @apply border border-white/15 bg-white/10 backdrop-blur-xl shadow-2xl shadow-slate-950/30;
+}
+
+.glass-soft {
+  @apply border border-white/10 bg-white/5 backdrop-blur-lg;
+}
+
+.edu-btn {
+  @apply relative overflow-hidden rounded-xl px-4 py-2 font-semibold transition duration-300 ease-out;
+  box-shadow: 0 10px 24px rgba(14, 165, 233, 0.25);
+}
+
+.edu-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.45) 50%, transparent 80%);
+  transform: translateX(-140%);
+  transition: transform 0.6s ease;
+}
+
+.edu-btn:hover::before {
+  transform: translateX(140%);
+}
+
+.edu-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(14, 165, 233, 0.35);
+}
+
+.edu-gradient-blue {
+  background: linear-gradient(135deg, #22d3ee, #2563eb);
+  color: #0f172a;
+}
+
+.edu-gradient-purple {
+  background: linear-gradient(135deg, #c084fc, #7c3aed);
+  color: #ffffff;
+}
+
+.edu-gradient-green {
+  background: linear-gradient(135deg, #4ade80, #16a34a);
+  color: #052e16;
+}
+
+.edu-gradient-orange {
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  color: #431407;
+}

@@ -8,6 +8,12 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: ReactNod
           <tr className="border-b border-slate-200 dark:border-slate-800">
             {headers.map((header) => (
               <th key={header} className="px-4 py-3 text-left font-medium text-slate-500">
+    <div className="glass overflow-hidden rounded-2xl">
+      <table className="min-w-full text-sm text-slate-100">
+        <thead>
+          <tr className="bg-white/10">
+            {headers.map((header) => (
+              <th key={header} className="px-4 py-3 text-left text-xs uppercase tracking-[0.15em] text-slate-200">
                 {header}
               </th>
             ))}
@@ -18,6 +24,9 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: ReactNod
             <tr key={i} className="border-b border-slate-100 dark:border-slate-800/60">
               {row.map((cell, c) => (
                 <td key={c} className="px-4 py-3">
+            <tr key={i} className="border-t border-white/10 hover:bg-white/5">
+              {row.map((cell, c) => (
+                <td key={c} className="px-4 py-3 text-slate-100">
                   {cell}
                 </td>
               ))}

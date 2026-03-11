@@ -13,6 +13,8 @@ export function Header({ title }: { title: string }) {
           <button className="rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-3 py-2 text-sm font-semibold text-slate-950">
             Toggle Theme
           </button>
+          <button className="edu-btn edu-gradient-purple text-sm">Notifications</button>
+          <button className="edu-btn edu-gradient-blue text-sm">Toggle Theme</button>
         </div>
       </div>
     </header>

@@ -25,6 +25,10 @@ export default function LandingPage() {
             Login
           </Link>
           <Link href="/register" className="rounded-xl border border-white/25 bg-white/10 px-5 py-2.5 text-white">
+          <Link href="/login" className="edu-btn edu-gradient-blue">
+            Login
+          </Link>
+          <Link href="/register" className="edu-btn edu-gradient-purple">
             Register
           </Link>
         </div>

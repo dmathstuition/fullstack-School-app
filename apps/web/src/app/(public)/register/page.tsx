@@ -9,6 +9,7 @@ export default function RegisterPage() {
           <input className="w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-slate-300" placeholder="Email" />
           <input className="w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-slate-300" placeholder="Password" type="password" />
           <button className="w-full rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-3 py-2 font-semibold text-slate-950">Register</button>
+          <button className="edu-btn edu-gradient-green w-full">Register</button>
         </div>
       </form>
     </main>

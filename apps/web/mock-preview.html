@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSMS Teacher + Student Platforms</title>
+  <style>
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 10% 10%,rgba(56,189,248,.35),transparent 28%),radial-gradient(circle at 90% 20%,rgba(168,85,247,.30),transparent 30%),linear-gradient(135deg,#0b1220,#121a31 42%,#1b2550);color:#fff}
+    .wrap{padding:22px}.glass{background:rgba(255,255,255,.10);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.17);border-radius:18px;box-shadow:0 16px 40px rgba(2,6,23,.35)}
+    .hero{padding:24px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.box{padding:14px}
+    .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}.pill{padding:10px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);font-size:13px}
+    .action{margin-top:12px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.btn{padding:10px;border:none;border-radius:10px;font-weight:700}.b1{background:linear-gradient(135deg,#22d3ee,#2563eb);color:#0f172a}.b2{background:linear-gradient(135deg,#c084fc,#7c3aed)}.b3{background:linear-gradient(135deg,#4ade80,#16a34a);color:#052e16}.b4{background:linear-gradient(135deg,#fbbf24,#f97316);color:#431407}
   <title>GSMS Beautiful Dashboard Preview</title>
   <style>
     body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 10% 10%,rgba(56,189,248,.35),transparent 28%),radial-gradient(circle at 90% 20%,rgba(168,85,247,.30),transparent 30%),linear-gradient(135deg,#0b1220,#121a31 42%,#1b2550);color:#fff}
@@ -12,11 +19,39 @@
     .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.stat{padding:12px}
     .grid{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:14px}.table{width:100%;border-collapse:collapse}.table td,.table th{border:1px solid rgba(255,255,255,.16);padding:8px;font-size:13px}
     .btn{display:block;margin-bottom:8px;padding:10px;border-radius:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16)}
+    .btn{display:block;margin-bottom:8px;padding:10px;border-radius:10px;border:none;font-weight:700;cursor:pointer;transition:.25s}
+    .btn:hover{transform:translateY(-2px) scale(1.02)}
+    .b1{background:linear-gradient(135deg,#22d3ee,#2563eb);color:#0f172a}.b2{background:linear-gradient(135deg,#c084fc,#7c3aed)}.b3{background:linear-gradient(135deg,#4ade80,#16a34a);color:#052e16}.b4{background:linear-gradient(135deg,#fbbf24,#f97316);color:#431407}
+    .chartRow{margin-top:12px}.line{height:10px;background:rgba(255,255,255,.12);border-radius:999px;margin-top:6px}.fill{height:10px;border-radius:999px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="glass hero"><h1>GSMS Premium Dashboard UI</h1><p>Glassmorphism + gradient depth + responsive flexbox analytics shell.</p></section>
+    <section class="glass hero">
+      <h1>GSMS Complete Teacher + Student Platforms</h1>
+      <p>All requested pages added with educational colors, chart-ready layout and animated action surfaces.</p>
+      <div class="action"><button class="btn b1">Create Lesson</button><button class="btn b2">Take Attendance</button><button class="btn b3">Generate Report</button><button class="btn b4">Message Parents</button></div>
+    </section>
+    <section class="columns">
+      <article class="glass box">
+        <h2>Teacher Platform (13 Pages)</h2>
+        <div class="list">
+          <div class="pill">Overview</div><div class="pill">My Classes</div><div class="pill">Attendance</div><div class="pill">Assignments</div>
+          <div class="pill">Results</div><div class="pill">Timetable</div><div class="pill">Exams</div><div class="pill">CBT</div>
+          <div class="pill">Messages</div><div class="pill">Performance</div><div class="pill">Salary</div><div class="pill">Resources</div>
+          <div class="pill">Profile</div>
+        </div>
+      </article>
+      <article class="glass box">
+        <h2>Student Platform (12 Pages)</h2>
+        <div class="list">
+          <div class="pill">Overview</div><div class="pill">Timetable</div><div class="pill">Assignments</div><div class="pill">Results</div>
+          <div class="pill">Payments</div><div class="pill">Attendance</div><div class="pill">Subjects</div><div class="pill">Library</div>
+          <div class="pill">Exams</div><div class="pill">CBT</div><div class="pill">Messages</div><div class="pill">Profile</div>
+        </div>
+      </article>
+    <section class="glass hero"><h1>GSMS Premium Dashboard UI</h1><p>Glassmorphism + educational colors + charts + animated action buttons.</p></section>
     <section class="roles">
       <div class="glass role">Super Admin</div><div class="glass role">School Admin</div><div class="glass role">Teacher</div><div class="glass role">Student</div>
       <div class="glass role">Parent</div><div class="glass role">Accountant</div><div class="glass role">Librarian</div><div class="glass role">Admission Officer</div>
@@ -29,6 +64,14 @@
         <div class="grid">
           <div class="glass" style="padding:12px"><table class="table"><tr><th>Date</th><th>Module</th><th>Action</th><th>Status</th></tr><tr><td>2026-03-10</td><td>Admissions</td><td>Application reviewed</td><td>Done</td></tr><tr><td>2026-03-11</td><td>Finance</td><td>Fee reminder sent</td><td>Queued</td></tr></table></div>
           <div class="glass" style="padding:12px"><h3>Quick Actions</h3><button class="btn">Create Announcement</button><button class="btn">Take Attendance</button><button class="btn">Generate Report</button><button class="btn">Message Parents</button></div>
+        <div class="chartRow glass" style="padding:12px;margin-top:12px"><b>Class Performance</b>
+          <div>JSS 1<div class="line"><div class="fill" style="width:76%;background:#22d3ee"></div></div></div>
+          <div>JSS 2<div class="line"><div class="fill" style="width:82%;background:#c084fc"></div></div></div>
+          <div>SS 1<div class="line"><div class="fill" style="width:88%;background:#4ade80"></div></div></div>
+        </div>
+        <div class="grid">
+          <div class="glass" style="padding:12px"><table class="table"><tr><th>Date</th><th>Module</th><th>Action</th><th>Status</th></tr><tr><td>2026-03-10</td><td>Admissions</td><td>Application reviewed</td><td>Done</td></tr><tr><td>2026-03-11</td><td>Finance</td><td>Fee reminder sent</td><td>Queued</td></tr></table></div>
+          <div class="glass" style="padding:12px"><h3>Quick Actions</h3><button class="btn b1">Create Announcement</button><button class="btn b2">Take Attendance</button><button class="btn b3">Generate Report</button><button class="btn b4">Message Parents</button></div>
         </div>
       </main>
     </section>

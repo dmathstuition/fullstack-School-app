@@ -1,3 +1,4 @@
+import { ClassCharts } from "@/components/features/ClassCharts";
 import { Header } from "@/components/layout/Header";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { DataTable } from "@/components/ui/DataTable";
@@ -15,6 +16,10 @@ export function RoleDashboard({ role, title }: { role: any; title: string }) {
           <StatCard label="Attendance Today" value="94.2%" />
           <StatCard label="Pending Fees" value="$24,300" />
           <StatCard label="Open Tickets" value="18" />
+        </section>
+
+        <section className="mt-6">
+          <ClassCharts />
         </section>
 
         <section className="mt-6 grid gap-4 xl:grid-cols-3">
@@ -38,6 +43,10 @@ export function RoleDashboard({ role, title }: { role: any; title: string }) {
                   {action}
                 </button>
               ))}
+              <button className="edu-btn edu-gradient-blue text-left text-sm">Create Announcement</button>
+              <button className="edu-btn edu-gradient-purple text-left text-sm">Take Attendance</button>
+              <button className="edu-btn edu-gradient-green text-left text-sm">Generate Report</button>
+              <button className="edu-btn edu-gradient-orange text-left text-sm">Message Parents</button>
             </div>
           </article>
         </section>

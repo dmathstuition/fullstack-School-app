@@ -55,6 +55,10 @@ This step delivers the `apps/web` frontend scaffold and role-based dashboard UI 
 
 - Shared layout primitives:
   - Sidebar navigation by role
+  - Header with theme toggle button
+  - Stat cards
+  - Data table for activities
+- Mobile-first responsive layout using Tailwind utility classes.
   - Header with action buttons
   - Stat cards
   - Data table for activities

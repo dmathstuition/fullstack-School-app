@@ -3,6 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSMS Frontend Framework Preview</title>
+  <style>
+    body { margin:0; font-family: Inter, Arial, sans-serif; background:#f8fafc; color:#0f172a; }
+    .hero { padding:40px; background: linear-gradient(90deg,#1d4ed8,#4f46e5); color:white; }
+    .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; padding:20px 40px; }
+    .card { background:white; border:1px solid #e2e8f0; border-radius:12px; padding:14px; }
+    .dash { display:flex; min-height:60vh; margin:20px 40px; border:1px solid #e2e8f0; border-radius:12px; overflow:hidden; }
+    .side { width:220px; background:#fff; border-right:1px solid #e2e8f0; padding:16px; }
+    .main { flex:1; background:#fff; padding:16px; }
+    .stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:14px 0; }
+    .table { width:100%; border-collapse:collapse; }
+    .table td, .table th { border:1px solid #e2e8f0; padding:8px; font-size:13px; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Global School Management System — Frontend</h1>
+    <p>Landing + role dashboards scaffold with shared UI components.</p>
+  </section>
+  <section class="grid">
+    <div class="card">Super Admin</div><div class="card">School Admin</div><div class="card">Teacher</div><div class="card">Student</div>
+    <div class="card">Parent</div><div class="card">Accountant</div><div class="card">Librarian</div><div class="card">Admission Officer</div>
+  </section>
+  <section class="dash">
+    <aside class="side"><b>GSMS</b><p>Overview</p><p>Students</p><p>Teachers</p><p>Finance</p></aside>
+    <main class="main">
+      <h2>School Admin Dashboard</h2>
+      <div class="stats"><div class="card">Students: 1,284</div><div class="card">Attendance: 94.2%</div><div class="card">Pending Fees</div><div class="card">Tickets: 18</div></div>
+      <table class="table">
+        <tr><th>Date</th><th>Module</th><th>Action</th><th>Status</th></tr>
+        <tr><td>2026-03-10</td><td>Admissions</td><td>Application reviewed</td><td>Done</td></tr>
+        <tr><td>2026-03-11</td><td>Finance</td><td>Fee reminder sent</td><td>Queued</td></tr>
+      </table>
+    </main>
+  </section>
   <title>GSMS Teacher + Student Platforms</title>
   <style>
     body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at 10% 10%,rgba(56,189,248,.35),transparent 28%),radial-gradient(circle at 90% 20%,rgba(168,85,247,.30),transparent 30%),linear-gradient(135deg,#0b1220,#121a31 42%,#1b2550);color:#fff}

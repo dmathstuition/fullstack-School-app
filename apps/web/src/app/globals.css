@@ -7,6 +7,11 @@
 }
 
 body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-100;
   @apply min-h-screen text-slate-100;
   background:
     radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.35), transparent 28%),

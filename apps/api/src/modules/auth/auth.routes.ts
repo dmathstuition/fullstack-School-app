@@ -23,3 +23,8 @@ authRouter.post("/reset-password", resetPasswordHandler);
 authRouter.get("/super-admin-only", requireAuth, requireRoles("SUPER_ADMIN"), (_req, res) => {
   res.status(200).json({ message: "RBAC access granted" });
 });
+import { loginHandler } from "./auth.controller";
+
+export const authRouter = Router();
+
+authRouter.post("/login", loginHandler);

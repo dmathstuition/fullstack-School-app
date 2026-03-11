@@ -20,6 +20,37 @@ This step delivers the `apps/web` frontend scaffold and role-based dashboard UI 
   - `/librarian`
   - `/admission-officer`
 
+## Full Teacher platform pages
+
+- `/teacher`
+- `/teacher/my-classes`
+- `/teacher/attendance`
+- `/teacher/assignments`
+- `/teacher/results`
+- `/teacher/timetable`
+- `/teacher/exams`
+- `/teacher/cbt`
+- `/teacher/messages`
+- `/teacher/performance`
+- `/teacher/salary`
+- `/teacher/resources`
+- `/teacher/profile`
+
+## Full Student platform pages
+
+- `/student`
+- `/student/timetable`
+- `/student/assignments`
+- `/student/results`
+- `/student/payments`
+- `/student/attendance`
+- `/student/subjects`
+- `/student/library`
+- `/student/exams`
+- `/student/cbt`
+- `/student/messages`
+- `/student/profile`
+
 ## UI framework
 
 - Shared layout primitives:

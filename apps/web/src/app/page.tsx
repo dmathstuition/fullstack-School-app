@@ -21,6 +21,10 @@ export default function LandingPage() {
           Colorful, responsive, role-driven dashboards inspired by modern SaaS UX with secure module-centric navigation.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
+          <Link href="/login" className="rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-5 py-2.5 font-semibold text-slate-950">
+            Login
+          </Link>
+          <Link href="/register" className="rounded-xl border border-white/25 bg-white/10 px-5 py-2.5 text-white">
           <Link href="/login" className="edu-btn edu-gradient-blue">
             Login
           </Link>

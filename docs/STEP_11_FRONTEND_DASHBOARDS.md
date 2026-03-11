@@ -59,6 +59,9 @@ This step delivers the `apps/web` frontend scaffold and role-based dashboard UI 
   - Stat cards
   - Data table for activities
   - Quick actions panel
+- Mobile-first responsive layout using modern flex/grid composition.
+- Colorful gradient design system with elevated contrast.
+- Glassmorphism visual style using translucent cards + blur surfaces.
   - Class performance + subject-distribution chart cards
 - Mobile-first responsive layout using modern flex/grid composition.
 - Multi-educational color design (blue, purple, green, orange accents) to represent varied academic modules.
@@ -70,5 +73,6 @@ This step delivers the `apps/web` frontend scaffold and role-based dashboard UI 
 
 1. Connect role pages to authenticated session state.
 2. Consume `/api/v1` backend endpoints for live data.
+3. Add chart components and notifications drawer.
 3. Replace static chart placeholders with live chart data from attendance/results modules.
 4. Add route guards and RBAC navigation filtering from JWT claims.

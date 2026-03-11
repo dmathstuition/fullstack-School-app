@@ -38,6 +38,11 @@ export function RoleDashboard({ role, title }: { role: any; title: string }) {
           <article className="glass rounded-2xl p-5">
             <h3 className="mb-3 text-base font-semibold text-white">Quick Actions</h3>
             <div className="flex flex-col gap-2">
+              {['Create Announcement', 'Take Attendance', 'Generate Report', 'Message Parents'].map((action) => (
+                <button key={action} className="rounded-xl bg-white/10 px-3 py-2 text-left text-sm text-slate-100 hover:bg-white/20">
+                  {action}
+                </button>
+              ))}
               <button className="edu-btn edu-gradient-blue text-left text-sm">Create Announcement</button>
               <button className="edu-btn edu-gradient-purple text-left text-sm">Take Attendance</button>
               <button className="edu-btn edu-gradient-green text-left text-sm">Generate Report</button>
